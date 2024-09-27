@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors, Lizard, Spock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>FiveFate Duel !!</h1>
+        <div class="choices">
+            <button onclick="playGame('rock')">Rock</button>
+            <button onclick="playGame('paper')">Paper</button>
+            <button onclick="playGame('scissors')">Scissors</button>
+            <button onclick="playGame('lizard')">Lizard</button>
+            <button onclick="playGame('spock')">Spock</button>
+        </div>
+        <div class="result">
+            <div class="images">
+                <div>
+                    <p>Your choice:</p>
+                    <img id="playerImage" src="images/placeholder.png" alt="Your Choice">
+                </div>
+                <div>
+                    <p>Computer's choice:</p>
+                    <img id="computerImage" src="images/placeholder.png" alt="Computer's Choice">
+                </div>
+            </div>
+            <p id="outcome">Result: </p>
+            <p id="score">Score: 0</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
